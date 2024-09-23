@@ -126,7 +126,7 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 15px;
-
+row-gap: 15px;
   padding: 12px;
 }
 
@@ -164,7 +164,7 @@ h3:hover, h2:hover {
 font-size: 2.4vh;
 }
 
-.main-text, .side-text, .preview-text, .learn-more-button {
+.main-text, .side-text, .preview-text, .learn-more-button, .info-list {
   font-family: "PT Sans", Helvetica, sans-serif;
 }
 
@@ -200,4 +200,57 @@ align-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); 
   cursor: pointer;
   opacity: 0.8;
+}
+
+@media (max-width: 1000px) {
+  .hero-Section-flexbox {
+    display: block; 
+  }
+
+  .hero-Section {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .hero-Section-side {
+    width: 100%; 
+  }
+
+  .main-image {
+    width: 100%; 
+
+  .side-section-image {
+    width: 100%; 
+  }
+}
+.main-preview-container, .hero-Section-flexbox  {
+margin: 0;
+
+}
+
+}
+
+@media (max-width: 1000px) {
+  
+    .second-main-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  
+}
+@media (max-width: 800px) {
+  
+  .second-main-grid {
+    grid-template-columns: 1fr 1fr ;
+  
+}
+
+}
+@media (max-width: 500px) {
+  
+  .second-main-grid {
+    grid-template-columns: 1fr  ;
+  
+}
+
 }
